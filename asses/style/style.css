@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat-Regular.ttf);
+}
+*{
+    font-family: Montserrat;
+    color: #2d2d2d;
+}
+main{
+   margin-left: calc(20% + 50px);
+    width: 75%;
+    padding:100px 50px ;
+    /* border: 1px solid red;    */
+    display: flex;
+    justify-content: end;    
+    flex-wrap: wrap;
+    >h1{
+        width: 100%;
+        text-align: center;
+        font-size: 4vw;
+        @media screen and (min-width: 992px) {
+            font-size: 3vw;  
+        }
+    }
+    >div:nth-of-type(1){
+        width:calc(20% + 40px);
+        height: 200px;        
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;       
+        position: fixed;
+        left: 10px;  
+        display: flex;
+        justify-content: center;         
+        flex-wrap: wrap;  
+        padding: 10px 20px; 
+        font-size: 1.5vw;
+        >*{
+            width: 100%;
+            @media screen and (min-width: 992px) {
+               font-size: 1vw; 
+            }  
+        }                 
+        @media screen and (min-width: 992px) {
+            left: 50px; 
+            width:20%;  
+        }   
+    }
+    section{
+        /* background-color: paleturquoise; */
+        width: 90%;
+        margin-top: 50px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 10px 5px;       
+        >div{
+            width: 100%;
+            border-bottom: 1px solid #2d2d2d;
+            transition: all 0.5s linear;
+            >figure{                
+                width: 100%;
+                height: 300px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;              
+                 /* border:1px solid blue;  */
+                >img{
+                    width: 20%;
+                    height: 100%;
+                    object-fit: contain;
+                    /* background-color: aqua; */
+                }
+                >figcaption{
+                    width: 70%;
+                    /* background-color: green; */
+                    display: flex;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    >*{
+                        width: 100%;
+                        margin-top: 10px;
+                        font-size: 2vw;
+                        @media screen and (min-width: 992px) {
+                            margin-top: 50px;
+                            font-size: 1.5vw; 
+                        }
+                    }
+                    
+                }
+            }
+        }
+        >div:last-child{
+            border: none;
+        }
+        @media screen and (min-width: 992px) {
+            margin-top: 80px;
+            padding: 50px 70px;  
+        }
+    }
+    >div:nth-of-type(2){
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        >button{
+            width: 150px;
+            height: 40px;
+            background-color: white;
+            border: 2px solid #2d2d2d92;
+           border-radius: 50rem;
+           cursor: pointer;
+           transition: all 0.2s linear;
+        }
+        >button:hover{           
+           background-color:#2d2d2d92 ;
+            color: white;
+            border: none;
+          
+        }
+         @media screen and (min-width: 992px) {
+            margin-top: 100px;  
+        }
+    }
+   
+    @media screen and (min-width: 992px) {
+        padding: 200px 100px ;
+    }
+}
+
+

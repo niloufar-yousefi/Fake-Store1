@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asses/style/style.css">
+</head>
+<body onload="myApi()">
+    <main >
+        <h1>Fake Store</h1>
+        <div onchange="myChange()">
+            <label for="men">Men's Clothing <input type="radio" name="yeksan" id="men" value="men's clothing"></label>
+            <label for="wemon">Women's Clothing <input type="radio" name="yeksan" id="wemon" value="women's clothing"></label>
+            <label for="jewelery">Jewelery <input type="radio" name="yeksan" id="jewelery" value="jewelery"></label>
+            <label for="electronics">Electronics <input type="radio" name="yeksan" id="wemon" value="electronics"></label>
+            <label for="all" >All <input type="radio"  name="yeksan" id="all" value="all" checked></label>
+        </div>        
+        <section id="box"></section>        
+        <div onclick="myApi(event)">
+            <button >Click To More</button>
+        </div>
+    </main>
+</body>
+<script src="./asses/script/script.js"></script>
+</html>
